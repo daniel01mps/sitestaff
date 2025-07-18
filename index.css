@@ -1,26 +1,25 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #e0f7fa, #ffffff);
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Container padrão */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-  
-  /* HERO MODERNO */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* HERO MODERNO */
 .hero {
   background: linear-gradient(rgba(0, 51, 102, 0.6), rgba(0, 51, 102, 0.6)),
               url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
@@ -113,209 +112,172 @@ nav a:hover::after {
   width: 100%;
 }
 
-  /* Seções */
-  section {
-    margin-bottom: 3rem;
-    animation: fadeIn 0.6s ease both;
-  }
-  
-  h2 {
-    color: #003366;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-  }
-  
-  p, li {
-    font-size: 1rem;
-  }
-  
-  /* Cards de serviços */
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-  
-  .card {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card i {
-    font-size: 2rem;
-    color: #006;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Contato */
-  #contato ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  #contato li {
-    margin-bottom: 0.5rem;
-  }
-  
-  #contato i {
-    margin-right: 0.5rem;
-    color: #003366;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    margin-top: 2rem;
-  }
-  
-  /* Animação */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(15px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  }
-  
- /* Estilo moderno para a seção Portfólio e Contato */
-.grid-duplo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-    justify-content: center;
-  }
-  
-  .grid-duplo .card {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 14px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-    text-align: left;
-    animation: fadeIn 0.5s ease-in-out both;
-    max-width: 480px;
-    margin: 0 auto;
-  }
-  
-  .grid-duplo .card h3 {
-    color: #003366;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border-bottom: 2px solid #e0f7fa;
-    padding-bottom: 0.5rem;
-  }
-  
-  .grid-duplo .card h3 i {
-    font-size: 1.5rem;
-    color: #003366;
-  }
-  
-  .grid-duplo .card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.6rem;
-    color: #333;
-  }
-  
-  .grid-duplo .card p strong {
-    color: #003366;
-    font-weight: 600;
-  }
-  
-  .grid-duplo .card a {
-    color: #0066cc;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin-bottom: 0.6rem;
-    transition: color 0.3s ease;
-  }
-  
-  .grid-duplo .card a:hover {
-    color: #004999;
-  }
-  
-  /* Para manter a responsividade uniforme entre todos os cards */
+/* Seções */
+section {
+  margin-bottom: 3rem;
+  animation: fadeIn 0.6s ease both;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+/* Cards de serviços */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card i {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 0.7rem;
+}
+
+.card h3 {
+  color: #003366;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Contato */
+#contato ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contato li {
+  margin-bottom: 0.5rem;
+}
+
+#contato i {
+  margin-right: 0.5rem;
+  color: #003366;
+}
+
+/* Rodapé */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
   }
-  
-  .card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    text-align: center;
-    transition: transform 0.3s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card i {
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
     font-size: 2rem;
-    color: #003366;
-    margin-bottom: 0.7rem;
-  }
-  
-  .card h3 {
-    color: #003366;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .card p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-  }
-  
-  .card a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  
-  .card a:hover {
-    text-decoration: underline;
   }
 
-  /* Logo na hero */
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Seção Portfólio e Contato */
+.grid-duplo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.grid-duplo .card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  text-align: left;
+  animation: fadeIn 0.5s ease-in-out both;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.grid-duplo .card h3 {
+  color: #003366;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #e0f7fa;
+  padding-bottom: 0.5rem;
+}
+
+.grid-duplo .card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+.grid-duplo .card a {
+  color: #0066cc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+.grid-duplo .card a:hover {
+  color: #004999;
+}
+
+/* Logo na hero */
 .logo-hero {
   width: 120px;
   height: auto;
@@ -325,14 +287,15 @@ nav a:hover::after {
   background: rgba(255, 255, 255, 0.3);
   padding: 8px;
 }
-/****************************************************************/
+
+/* Contato visual bonito */
 .card-contato {
   background-color: #fff;
   padding: 3rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(98, 29, 29, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  max-width: 700px;
+  max-width: 1100px;
   margin: 4rem auto;
 }
 
@@ -344,75 +307,75 @@ nav a:hover::after {
   justify-content: center;
   gap: 0.6rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #d1f3f7;
+  border-bottom: 1px solid #e0f7fa;
   padding-bottom: 1rem;
 }
 
-/* Ícones */
-.social-icons {
-  display: flex;
-  justify-content: center;
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem 3rem;
+  justify-items: center;
   align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  padding-top: 1.5rem;
 }
 
-.icon-button {
-  width: 80px;
-  height: 80px;
+.contato-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contato-item:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  background-color: #e0f7fa;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
-  background-color: #c6ced7;
-  text-decoration: none;
+  margin: 0 auto 0.6rem;
   transition: all 0.3s ease;
-  
+  font-size: 1.4rem;
+  color: #003366;
 }
 
-.icon-button:hover {
-  background-color: #0baca9;
+.icon-circle:hover {
+  background-color: #007bff;
+  color: white;
   transform: scale(1.1);
 }
 
-.icon-button i {
-  display: block;
-  font-size: 1.9rem;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-;
-.logo-container {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 6px solid #f4f4f4;
-  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
-  margin: 0 auto 1.5rem;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.icon-circle.whatsapp:hover {
+  background-color: #25D366;
 }
 
-.logo-img {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  border-radius: 50%;
+.icon-circle.instagram:hover {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
 }
 
+.contato-item a {
+  color: #003366;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contato-item a:hover {
+  color: #007bff;
+}
+
+/* Clientes */
 .card-clientes {
   background-color: #fff;
   padding: 2.5rem 1.5rem;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 4rem auto;
 }
 
@@ -428,34 +391,14 @@ nav a:hover::after {
   padding-bottom: 1rem;
 }
 
-.card-clientes h2 i {
-  font-size: 1.6rem;
-  color: #003366;
-}
-
 .logos-clientes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px 40px;
+  justify-items: center;
+  margin-top: 30px;
 }
 
-
-.logos-clientes img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  background-color: white;
-  padding: 10px;
-  filter: grayscale(100%);
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.logos-clientes img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05);
-}
 .logo-box {
   display: flex;
   flex-direction: column;
@@ -467,7 +410,7 @@ nav a:hover::after {
 .logo-img {
   width: 120px;
   height: 120px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   background-color: white;
   padding: 10px;
@@ -481,11 +424,12 @@ nav a:hover::after {
 }
 
 .logo-nome {
-  font-size: xrem;
+  font-size: 1rem;
   color: #003366;
   text-align: center;
   font-weight: 500;
 }
+
 .texto-clientes {
   max-width: 800px;
   margin: 0 auto 2.5rem;
@@ -495,4 +439,25 @@ nav a:hover::after {
   color: #003366;
   font-weight: 400;
   text-align: center;
+}
+.hero h1, .hero p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
