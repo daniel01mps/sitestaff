@@ -327,7 +327,7 @@ nav a:hover::after {
 }
 /****************************************************************/
 .card-contato {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 3rem 2rem;
   border-radius: 20px;
   box-shadow: 0 12px 30px rgba(98, 29, 29, 0.05);
